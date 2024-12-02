@@ -1,0 +1,202 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .title {
+    text-align: center;
+    color: #ff0077;
+    margin-bottom: 20px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+  
+  .offer-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 341px;
+height: 363.11px;
+top: 82px;
+left: 59px;
+gap: 0px;
+opacity: 0px;
+
+  }
+  select{
+    width: 65.98px;
+    height: 25.31px;
+    top: 264.05px;
+    left: 125.23px;
+    border-radius: 1.81px 0px 0px 0px;
+    border: 0.9px solid black;
+    padding: 5px 0px ; 
+    opacity: 1; 
+}
+
+  .offer {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popular {
+    border: 2px solid #ffa500;
+    position: relative;
+  }
+  
+  .most-popular {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background-color: #ff0077;
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+  }
+  
+  .unit {
+    font-weight: bold;
+  }
+  
+  .discount {
+    color: #ff0077;
+    font-size: 14px;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+    margin-left: 110px;
+  }
+  
+  .original-price {
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: line-through;
+    margin-left: 70%;
+
+  }
+  .options.hidden {
+    display: none;
+  }
+  
+  .offer.expanded .options {
+    display: block; /* or whatever you prefer */
+  }
+  
+  .label-card{
+    width: 106px;
+    height: 17px;
+    margin-left: 40px;
+    font-size: 9.94px;
+    font-weight: 400;
+    line-height: 12.03px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .hash-tag{
+    font-size: 9.04px;
+    font-weight: 400;
+    line-height: 10.94px;
+    text-align: left;
+    width: 19px;
+  }
+
+  .hash-count{
+    position: absolute;
+   margin: 8px;
+  }
+  .offer-heading{
+    display: flex;
+    align-items: center;
+  }
+
+
+  .offer-heading hr{
+    height: 0.5px;
+    width: 110px;
+    background: grey;
+    border: none;
+  }
+
+
+  .options {
+    margin-top: 10px;
+  }
+  
+  .option {
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    gap: 0;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .free-delivery {
+    color: #ff0077;
+  }
+  
+  .add-to-cart {
+    background-color: #ff0077;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: right;
+    
+    font-size: 12px;
+    height: 15px;
+    gap: 0px;
+    opacity: 0px;
+    color: #00000066;
+    font: italic 400 12px/14.52px Inter;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
