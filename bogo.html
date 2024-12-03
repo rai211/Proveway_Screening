@@ -1,176 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOGO Offer</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <div class="container">
-    <div class="offer-heading">
-        <hr>
-        <h1 class="title">YAY! It's BOGO</h1>
-        <hr>
-    </div>
-    <div class="offer-box">
-      <div class="offer">
-        <label for="one-unit">
-          <input type="radio" name="unit" id="one-unit">
-          <span class="unit">1 Unit</span>
-          <span class="discount">10% Off</span>
-          <span class="price">$10.00 USD</span>
-          <span class="original-price">$24.00 USD</span>
-          <div class="options">
-            <div class="label-card">
-                <label for="">Size</label>
-                <label for="">Colour</label>
-            </div>
-            <div class="option">
-                <div class="hash-tag">
-                    <label class="hash-count" >#1</label>
+    <main>
+        <!-- main container -->
+        <div class="mainContainer">
+            <!-- sub container -->
+            <div class="subContainer">
+                <!-- heading -->
+                <div class="heading">
+                    <hr>
+                    <h1>YAY! It's BOGO</h1>
+                    <hr>
+                </div>
 
-                </div>
-              <select>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-            <div class="option">
-                <div class="hash-tag">
-                <label class="hash-count">#2</label>
-                </div>
-              <select>
-                <option>Size</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Colour</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </div>
-        </label>
-      </div>
+                <!-- cards -->
+                <div class="cardsContainer">
+                    <!-- card 1 -->
+                    <label class="cards" id="card1" for="radio1">
+                        <div class="cardTop">
+                            <div class="crads_left">
+                                <input type="radio" name="accordion" id="radio1" class="accordion-radio" />
+                                <div class="units">
+                                    <div>
+                                        <p>1 Unit</p>
+                                        <span>10% Off</span>
+                                    </div>
+                                    <p>Standard Price</p>
+                                </div>
+                            </div>
+                            <div class="crads_right">
+                                <div>
+                                    <p>$10.00 USD</p>
+                                    <s>$24.00 USD</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBottom" id="cardBottom1">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Size</th>
+                                    <th>Color</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="number">#1</td>
+                                        <td>
+                                            <select name="size1">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color1">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </label>
 
-      <div class="offer popular">
-        <span class="most-popular">MOST POPULAR</span>
-        <label for="two-units">
-        <input type="radio" name="unit" id="two-units">
-          <span class="unit">2 Unit</span>
-          <span class="discount">20% Off</span>
-          <span class="price">$18.00 USD</span><br>
-          <span class="original-price">$24.00 USD</span>
-          <div class="options">
-            <div class="label-card">
-                <label for="">Size</label>
-                <label for="">Colour</label>
-            </div>
-            <div class="option">
-                <div class="hash-tag">
-                    <label class="hash-count" >#1</label>
+                    <!-- card 2 -->
+                    <label class="cards" id="card2" for="radio2">
+                        <span class="popular">MOST POPULAR</span>
+                        <div class="cardTop">
+                            <div class="crads_left">
+                                <input type="radio" name="accordion" id="radio2" class="accordion-radio" />
+                                <div class="units">
+                                    <div>
+                                        <p>2 Unit</p>
+                                        <span>20% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crads_right">
+                                <div>
+                                    <p>$18.00 USD</p>
+                                    <s>$24.00 USD</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBottom" id="cardBottom2">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Size</th>
+                                    <th>Color</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="number">#1</td>
+                                        <td>
+                                            <select name="size1">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color1">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">#2</td>
+                                        <td>
+                                            <select name="size2">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color2">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </label>
 
+                    <!-- card 3 -->
+                    <label class="cards" id="card3" for="radio3">
+                        <div class="cardTop">
+                            <div class="crads_left">
+                                <input type="radio" name="accordion" id="radio3" class="accordion-radio" />
+                                <div class="units">
+                                    <div>
+                                        <p>3 Unit</p>
+                                        <span>30% Off</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crads_right">
+                                <div>
+                                    <p>$24.00 USD</p>
+                                    <s>$24.00 USD</s>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardBottom" id="cardBottom3">
+                            <table>
+                                <thead>
+                                    <th></th>
+                                    <th>Size</th>
+                                    <th>Color</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="number">#1</td>
+                                        <td>
+                                            <select name="size1">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color1">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">#2</td>
+                                        <td>
+                                            <select name="size2">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color2">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="number">#3</td>
+                                        <td>
+                                            <select name="size2">
+                                                <option value="S">S</option>
+                                                <option value="M">M</option>
+                                                <option value="L">L</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <select name="color2">
+                                                <option value="Black">Black</option>
+                                                <option value="Yellow">Yellow</option>
+                                                <option value="Pink">Pink</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </label>
                 </div>
-              <select>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-            <div class="option">
-                <div class="hash-tag">
-                <label class="hash-count">#2</label>
-                </div>
-              <select>
-                <option>Size</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Colour</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </div>
-        </label>
-      </div>
 
-      <div class="offer">
-        <label for="three-units">
-            <input type="radio" name="unit" id="three-units">
-          <span class="unit">3 Unit</span>
-          <span class="discount">30% Off</span>
-          <span class="price">$24.00 USD</span>
-          <span class="original-price">$24.00 USD</span>
-          <div class="options">
-            <div class="label-card">
-                <label for="">Size</label>
-                <label for="">Colour</label>
+                <!-- base -->
+                <div class="base">
+                    <p class="free">Free Delivery</p>
+                    <p class="total">Total : $18.00 USD</p>
+                </div>
+                <!-- button -->
+                <div class="btn">
+                    <button>Add to Cart</button>
+                    <div>
+                        <p class="copyright">@ Powered by Pumper</p>
+                    </div>
+                </div>
             </div>
-            <div class="option">
-                <div class="hash-tag">
-                    <label class="hash-count" >#1</label>
+        </div>
+    </main>
 
-                </div>
-              <select>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-            <div class="option">
-                <div class="hash-tag">
-                <label class="hash-count">#2</label>
-                </div>
-              <select>
-                <option>Size</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-              </select>
-              <select>
-                <option>Colour</option>
-                <option>Black</option>
-                <option>White</option>
-                <option>Blue</option>
-              </select>
-            </div>
-          </div>
-        </label>
-      </div>
-    </div>
-    <div class="summary">
-      <span class="free-delivery">Free Delivery</span>
-      <span class="total">Total: $18.00 USD</span>
-    </div>
-    <button class="add-to-cart">+ Add to Cart</button>
-    <footer>
-      <p class="powered-by">@ Powered by Pumper</p>
-    </footer>
-  </div>
+    <!-- script -->
+     <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

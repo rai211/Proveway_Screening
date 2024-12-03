@@ -1,202 +1,187 @@
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-    position: relative;
-  }
-  
-  .container {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  .title {
-    text-align: center;
-    color: #ff0077;
-    margin-bottom: 20px;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.2px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-  }
-  
-  .offer-box {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 15px;
-    width: 341px;
-height: 363.11px;
-top: 82px;
-left: 59px;
-gap: 0px;
-opacity: 0px;
-
-  }
-  select{
-    width: 65.98px;
-    height: 25.31px;
-    top: 264.05px;
-    left: 125.23px;
-    border-radius: 1.81px 0px 0px 0px;
-    border: 0.9px solid black;
-    padding: 5px 0px ; 
-    opacity: 1; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  .offer {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .popular {
-    border: 2px solid #ffa500;
-    position: relative;
-  }
-  
-  .most-popular {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    background-color: #ff0077;
-    color: white;
-    padding: 2px 6px;
-    font-size: 12px;
-    border-radius: 4px;
-  }
-  
-  .unit {
-    font-weight: bold;
-  }
-  
-  .discount {
-    color: #ff0077;
-    font-size: 14px;
-  }
-  
-  .price {
-    font-size: 18px;
-    color: #333;
-    margin-top: 5px;
-    margin-left: 110px;
-  }
-  
-  .original-price {
-    font-size: 14px;
-    color: #aaa;
-    text-decoration: line-through;
-    margin-left: 70%;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #3b3b3b;
+}
 
-  }
-  .options.hidden {
-    display: none;
-  }
-  
-  .offer.expanded .options {
-    display: block; /* or whatever you prefer */
-  }
-  
-  .label-card{
-    width: 106px;
-    height: 17px;
-    margin-left: 40px;
-    font-size: 9.94px;
-    font-weight: 400;
-    line-height: 12.03px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-  }
+.mainContainer {
+  width: 500px;
+  background: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
 
-  .hash-tag{
-    font-size: 9.04px;
-    font-weight: 400;
-    line-height: 10.94px;
-    text-align: left;
-    width: 19px;
-  }
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
-  .hash-count{
-    position: absolute;
-   margin: 8px;
-  }
-  .offer-heading{
-    display: flex;
-    align-items: center;
-  }
+.mainContainer .subContainer .heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
+.mainContainer .subContainer .heading hr {
+  height: 1px;
+  background: #ccc;
+  flex-basis: auto;
+  width: 100px;
+}
 
-  .offer-heading hr{
-    height: 0.5px;
-    width: 110px;
-    background: grey;
-    border: none;
-  }
+.mainContainer .subContainer .heading h1 {
+  color: #ff0077;
+  font-size: 20px;
+  font-weight: 600;
+}
 
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 
-  .options {
-    margin-top: 10px;
-  }
-  
-  .option {
-    width: 185px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-    gap: 0;
-  }
-  
-  .summary {
-    display: flex;
-    justify-content: space-between; 
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .free-delivery {
-    color: #ff0077;
-  }
-  
-  .add-to-cart {
-    background-color: #ff0077;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  footer {
-    text-align: right;
-    
-    font-size: 12px;
-    height: 15px;
-    gap: 0px;
-    opacity: 0px;
-    color: #00000066;
-    font: italic 400 12px/14.52px Inter;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
+.cards {
+  width: 100%;
+  padding: 24px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.cards .cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crads_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.units div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.units div p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.units div span {
+  font-size: 12px;
+  color: #fff;
+  background-color: #ff4a81;
+  padding: 2px 4px;
+}
+
+.units p {
+  font-size: 14px;
+}
+
+.crads_right div p {
+  font-size: 16px;
+}
+
+.crads_right div s {
+  font-size: 12px;
+  color: #646464;
+}
+
+.base {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.base .free {
+  font-size: 14px;
+  color: #ff4a81;
+}
+
+.base .total {
+  font-size: 14px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn button {
+  width: 100%;
+  border: none;
+  padding: 12px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  background: #f56a93;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn .copyright {
+  font-size: 12px;
+  color: #9c9c9c;
+  align-self: flex-end;
+  display: flex;
+}
+
+.btn div {
+  display: flex;
+  justify-content: end;
+}
+
+table thead th {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+table .number {
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 24px;
+  padding-right: 8px;
+}
+
+table select {
+  width: 80px;
+  font-size: 14px;
+  padding: 4px;
+  margin-right: 8px;
+  background: #fff;
+  border: 1px solid #ccc;
+}
+
+#cardBottom1, #cardBottom2, #cardBottom3{
+  display: none;
+}
+
+#card2 {
+  position: relative;
+}
+
+.popular {
+  font-size: 12px;
+  background: #f56a93;
+  padding: 4px 8px;
+  color: #fff;
+  position: absolute;
+  top: -8px;
+  right: 6px;
+}
